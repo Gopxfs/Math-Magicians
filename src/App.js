@@ -1,11 +1,11 @@
+import React from 'react';
 import Calculator from './components/Calculator';
 import './index.scss';
 
-const calculator = new Calculator();
-function App() {
-  return (
-    calculator.render()
-  );
+class App extends React.PureComponent {
+  render() {
+    return Calculator.render();
+  }
 }
 
 export default App;
