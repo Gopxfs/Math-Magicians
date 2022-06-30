@@ -11,10 +11,28 @@ class Calculator extends React.PureComponent {
       next: null,
       operation: null,
     };
+
+    this.result = 0;
   }
 
   newOperation = (symbol) => {
-   this.setState(calculate(this.state, symbol));
+   this.setState(calculate(this.state, symbol), () => {this.updateResult(symbol)});
+  }
+
+  updateResult = (symbol) => {
+    if (this.isANumber(symbol))
+    this.result = this.state.next;
+    else if (symbol === '=')
+    this.result = this.state.total ?? this.state.next;
+    else if (symbol === 'AC')
+    this.result = 0;
+    console.log(this.result);
+  }
+
+  isANumber = (value) => {
+    if (value === '1' || value === '2' || value === '3' || value === '4' || value === '5' || 
+    value === '6' || value === '7' || value === '8' || value === '9' || value === '0')
+    return true;
   }
 
   render() {
@@ -22,7 +40,7 @@ class Calculator extends React.PureComponent {
       <div className="calculator">
         <div className="result">
           <div>
-            0
+            {this.state.next ?? this.state.total ?? 0}
           </div>
         </div>
         <div className="buttons">
@@ -33,7 +51,7 @@ class Calculator extends React.PureComponent {
           <button type="button" onClick={() => this.newOperation('7')} className="button grey">7</button>
           <button type="button" onClick={() => this.newOperation('8')} className="button grey">8</button>
           <button type="button" onClick={() => this.newOperation('9')} className="button grey">9</button>
-          <button type="button" onClick={() => this.newOperation('X')} className="button orange">X</button>
+          <button type="button" onClick={() => this.newOperation('x')} className="button orange">X</button>
           <button type="button" onClick={() => this.newOperation('4')} className="button grey">4</button>
           <button type="button" onClick={() => this.newOperation('5')} className="button grey">5</button>
           <button type="button" onClick={() => this.newOperation('6')} className="button grey">6</button>
