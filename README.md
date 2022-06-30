@@ -10,6 +10,7 @@
 [Live demo](#) (Not ready)
 
 ## Screenshots:
+![Calculator screenshot](/screenshots/calculator.png)
 
 ## Getting Started:
 To access and change the code on your computer (using GIT):
