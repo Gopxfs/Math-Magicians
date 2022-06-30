@@ -4,7 +4,7 @@ import './index.scss';
 
 class App extends React.PureComponent {
   render() {
-    return Calculator.render();
+    return (<Calculator />);
   }
 }
 
