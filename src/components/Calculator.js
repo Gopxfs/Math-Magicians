@@ -51,7 +51,7 @@ class Calculator extends React.PureComponent {
           <button type="button" onClick={() => this.newOperation('7')} className="button grey">7</button>
           <button type="button" onClick={() => this.newOperation('8')} className="button grey">8</button>
           <button type="button" onClick={() => this.newOperation('9')} className="button grey">9</button>
-          <button type="button" onClick={() => this.newOperation('x')} className="button orange">X</button>
+          <button type="button" onClick={() => this.newOperation('x')} className="button orange">x</button>
           <button type="button" onClick={() => this.newOperation('4')} className="button grey">4</button>
           <button type="button" onClick={() => this.newOperation('5')} className="button grey">5</button>
           <button type="button" onClick={() => this.newOperation('6')} className="button grey">6</button>
