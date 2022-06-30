@@ -1,6 +1,5 @@
 import React from 'react';
 import calculate from '../logic/calculate';
-import operate from '../logic/operate';
 
 class Calculator extends React.PureComponent {
   constructor(props) {
@@ -9,38 +8,27 @@ class Calculator extends React.PureComponent {
     this.state = {
       total: null,
       next: null,
-      operation: null,
     };
-
-    this.result = 0;
   }
 
   newOperation = (symbol) => {
-   this.setState(calculate(this.state, symbol), () => {this.updateResult(symbol)});
-  }
-
-  updateResult = (symbol) => {
-    if (this.isANumber(symbol))
-    this.result = this.state.next;
-    else if (symbol === '=')
-    this.result = this.state.total ?? this.state.next;
-    else if (symbol === 'AC')
-    this.result = 0;
-    console.log(this.result);
+    const { state } = this;
+    this.setState(calculate(state, symbol));
   }
 
   isANumber = (value) => {
-    if (value === '1' || value === '2' || value === '3' || value === '4' || value === '5' || 
-    value === '6' || value === '7' || value === '8' || value === '9' || value === '0')
-    return true;
+    if (value === '1' || value === '2' || value === '3' || value === '4' || value === '5'
+    || value === '6' || value === '7' || value === '8' || value === '9' || value === '0') return true;
+    return false;
   }
 
   render() {
+    const { total, next } = this.state;
     return (
       <div className="calculator">
         <div className="result">
           <div>
-            {this.state.next ?? this.state.total ?? 0}
+            {next ?? total ?? 0}
           </div>
         </div>
         <div className="buttons">
