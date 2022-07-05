@@ -1,23 +1,23 @@
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 const NavBar = () => (
   <nav className="navbar">
     <p> Math Magicians </p>
     <ul>
       <li>
-        <Link to="/">
+        <NavLink to="/">
           Home
-        </Link>
+        </NavLink>
       </li>
       <li>
-        <Link to="/calculator">
+        <NavLink to="/calculator">
           Calculator
-        </Link>
+        </NavLink>
       </li>
       <li>
-        <Link to="/quote">
+        <NavLink to="/quote">
           Quote
-        </Link>
+        </NavLink>
       </li>
     </ul>
   </nav>
