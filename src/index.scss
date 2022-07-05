@@ -1,7 +1,16 @@
 @import './partials/calculator';
 @import './partials/buttons';
 @import './partials/result';
+@import './partials/navbar';
 
 body {
   margin: 0;
+  overflow: hidden;
+  background-color: #c53117;
+
+  * {
+    margin: 0;
+    padding: 0;
+    border: 0;
+  }
 }
