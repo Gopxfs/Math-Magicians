@@ -2,7 +2,7 @@ import Calculator from '../components/Calculator';
 
 const CalculatorPage = () => (
   <div>
-    <h1> Calculator </h1>
+    <h1> Let&apos;s do some math! </h1>
     <Calculator />
   </div>
 );

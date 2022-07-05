@@ -1,6 +1,9 @@
 const QuotePage = () => (
   <div>
-    <h1> Quote </h1>
+    <h2>
+      Mathematics is not about numbers, equations, computations, or algorithms:
+      it is about understanding. -William Paul Thurston
+    </h2>
   </div>
 );
 
