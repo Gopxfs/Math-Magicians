@@ -1,0 +1,14 @@
+.quotePage {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+
+  h2 {
+    font-size: 30px;
+    margin-top: 50px;
+    width: 95%;
+    max-width: 1000px;
+    font-style: italic;
+    color: rgb(230, 230, 230);
+  }
+}
