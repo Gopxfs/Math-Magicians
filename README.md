@@ -7,8 +7,7 @@
 - JavaScript
 
 ## Live demo:
-This website have been deployed using:
-[Heroku](https://math-magicians-gopxfs.herokuapp.com/) & [Netlify](https://math-magicians-gopfs.netlify.app/)
+This website have been deployed using [Heroku](https://math-magicians-gopxfs.herokuapp.com/) & [Netlify](https://math-magicians-gopfs.netlify.app/).
 
 ## Screenshots:
 ### Calculator:
