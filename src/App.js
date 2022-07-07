@@ -7,6 +7,10 @@ import NavBar from './components/NavBar';
 import './index.scss';
 
 class App extends React.PureComponent {
+  componentDidMount() {
+    document.title = 'Math Magicians';
+  }
+
   render() {
     return (
       <>
