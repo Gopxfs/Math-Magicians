@@ -7,7 +7,8 @@
 - JavaScript
 
 ## Live demo:
-[Live demo](#) (Not ready)
+This website have been deployed using:
+[Heroku](https://math-magicians-gopxfs.herokuapp.com/) & []()
 
 ## Screenshots:
 ### Calculator:
